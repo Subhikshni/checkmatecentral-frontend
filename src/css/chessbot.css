@@ -1,0 +1,118 @@
+/* chessbot.css */
+
+.chess-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f1e3; /* Very light beige */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.play-as-button,
+.undo-button {
+  padding: 10px 20px;
+  background-color: #3c7c94; /* Medium teal blue */
+  color: #f5f1e3; /* Very light beige */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.play-as-button:hover,
+.undo-button:hover {
+  background-color: #53423b; /* Dark brownish gray */
+}
+
+.chessboard {
+  margin: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.move-history-container {
+  max-height: 400px;
+  width: 300px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.move-history h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #3c7c94;
+  /* chessbot.css continued */
+
+  color: #3c7c94; /* Medium teal blue */
+}
+
+.move-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.move-history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd; /* Divider between moves */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f1e3; /* Very light beige */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal h3 {
+  color: #3c7c94; /* Medium teal blue */
+  margin-bottom: 20px;
+}
+
+.modal button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #3c7c94; /* Medium teal blue */
+  color: #f5f1e3; /* Very light beige */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal button:hover {
+  background-color: #53423b; /* Dark brownish gray */
+}
+
+.promotion-buttons button {
+  margin: 0 5px;
+}

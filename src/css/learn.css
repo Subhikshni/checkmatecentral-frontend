@@ -1,0 +1,79 @@
+.learn-container {
+  padding: 40px;
+  background-color: #f5f1e3; /* Very light beige */
+  color: #181d22; /* Very dark blue-gray */
+}
+
+.learn-container h1 {
+  text-align: center;
+  color: #53423b;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.module {
+  background-color: #fff;
+  border: 2px solid #3c7c94; /* Medium teal blue */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module h2 {
+  color: #3c7c94; /* Medium teal blue */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3c7c94;
+  padding-bottom: 10px;
+}
+
+.module-section {
+  margin-bottom: 20px;
+}
+
+.module-section h3 {
+  color: #53423b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.module-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #181d22; /* Very dark blue-gray */
+}
+
+.learn-button {
+  background-color: #3c7c94; /* Medium teal blue */
+  color: #f5f1e3; /* Very light beige */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-button:hover {
+  background-color: #285f70; /* Darker teal blue */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .learn-container {
+    padding: 20px;
+  }
+
+  .module h2 {
+    font-size: 2rem;
+  }
+
+  .module-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .module-section p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #3c7c94; /* Medium teal blue */
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #d0b89f; /* Light beige */
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #f5f1e3; /* Very light beige */
+}
