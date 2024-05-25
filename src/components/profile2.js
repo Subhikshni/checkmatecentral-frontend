@@ -18,9 +18,7 @@ function Profile2() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:5002/profile2/${username}`
-        );
+        const response = await axios.get(`/profile2/${username}`);
         setUserData(response.data.username);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -34,7 +32,7 @@ function Profile2() {
     try {
       // Make API call to change password
       const response = await axios.put(
-        `http://localhost:5002/profile2/${username}/change-password`,
+        `/profile2/${username}/change-password`,
         { newPassword }
       );
       console.log("Password changed successfully:", response.data);
